@@ -1,5 +1,11 @@
 # Advanced Persian Abstractive Summarization with Fine-Tuned ParsT5
 
+![Python 3.8+](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![Transformers](https://img.shields.io/badge/%F0%9F%A5%97-Transformers-yellow.svg)
+![Kaggle Notebook](https://img.shields.io/badge/Kaggle-Notebook-blue.svg)
+![NLP Task](https://img.shields.io/badge/NLP-Summarization-green.svg)
+![Model](https://img.shields.io/badge/Model-ParsT5--base-orange.svg)
+
 An enterprise-grade sequence-to-sequence NLP pipeline optimized for abstractive text summarization in the Persian language. This project leverages the pre-trained **ParsT5-base** transformer architecture, fine-tuning it on a curated multi-domain Persian news corpus to generate highly fluent, contextually accurate, and structurally sound textual summaries.
 
 ---
@@ -154,7 +160,7 @@ To establish true practical capabilities, the model was tested under a zero-shot
 * **Domain Specificity Bias**: Fine-tuning heavily favors formalized journalistic syntax; conversational or colloquial structures may witness higher loss metrics.
 
 ### Targeted Future Architecture Upgrades
-1. **Full Dataset Scale-Up**: Removing the data ceiling to train on 100% of the available ~367K cleared records.
+1. **Full Dataset Scale-Up**: Removing the data ceiling to train on 100% of the available ~367K cleaned records.
 2. **Alternative Decoder Exploration**: Transitioning beyond basic Beam Search to implement Nucleus Sampling ($top-p$) and Penalized Contrastive Decoding to maximize phrase variation.
 3. **Advanced Semantic Evaluations**: Integrating deep embeddings like Persian BERT Score wrappers (`bert-base-parsbert-uncased`) to assess generated text quality beyond mere literal n-gram matches.
 4. **Interactive GUI Deployment**: Wrapping the checkpoint file within a containerized Streamlit or Gradio interface for accessible web testing.
